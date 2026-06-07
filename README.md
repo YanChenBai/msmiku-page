@@ -10,6 +10,7 @@
 - Vite+ 统一工具链
 - `@nuxt/fonts` 字体加载
 - `shadcn-nuxt` 组件约定
+- Nuxt Head 配置页面标题、视口与配色模式
 
 ## 本地开发
 
@@ -65,6 +66,8 @@ app/
     MiShengHead.vue        # 头像眨眼与点击晃动
     SplitText.vue          # GSAP 文字入场动效
     Magnet.vue             # 磁吸交互组件
+public/
+  favicon.ico              # 站点图标
 nuxt.config.ts             # Nuxt、字体、Tailwind、Nitro 配置
 vite.config.ts             # Vite+ 格式化、lint、任务配置
 ```
@@ -80,6 +83,8 @@ vite.config.ts             # Vite+ 格式化、lint、任务配置
 - 页面文案：首屏介绍、边界说明、商城提示
 
 头像图片位于 `app/assets/img/`，眨眼和点击晃动逻辑在 `app/components/MiShengHead.vue`。
+
+站点标题、`viewport`、`color-scheme` 等页面元信息位于 `nuxt.config.ts` 的 `app.head`。浏览器标签页图标位于 `public/favicon.ico`。
 
 ## 构建说明
 

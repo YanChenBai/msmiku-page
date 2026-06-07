@@ -7,6 +7,16 @@ export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css'],
   modules: ['@nuxt/fonts', 'shadcn-nuxt'],
   vite: { plugins: [tailwindcss()] },
+  app: {
+    head: {
+      title: '弥生Miku',
+      meta: [
+        { charset: 'UTF-8' },
+        { name: 'color-scheme', content: 'light dark' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      ],
+    },
+  },
   fonts: {
     families: [
       {
